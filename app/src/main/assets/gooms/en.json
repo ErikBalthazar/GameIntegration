@@ -1,0 +1,166 @@
+﻿{"c2dictionary":true,"data":{
+
+"loading":							"Loading",
+			
+			
+			
+"btn_play":							"Play",
+"btn_sandbox":						"Level Editor",
+"btn_credits":						"Credits",
+			
+"info_levels":						"completed levels",
+"info_itens":						"unlocked itens",
+			
+			
+			
+"btn_new":							"New Level",
+"btn_random":						"Random",
+			
+			
+			
+"level_game":						"Level",
+"level_sandbox":					"Level",
+"level_tutorial":					"tutorial",
+			
+			
+			
+"btn_save":							"Publish",
+"btn_delete":						"Delete",
+"btn_exit":							"Exit",
+"btn_cancel":						"Cancel",
+"btn_end_tutorial":					"Close tutorial",
+"btn_share":						"Share",
+			
+"btn_preview":						"Play",
+"btn_restart": 						"Restart",
+"btn_view":							"Play",
+			
+"btn_update":						"Update",
+			
+			
+			
+"scene_skip":						"Click to skip intro",
+			
+			
+			
+"title_credits":					"Credits",
+"title_pause":						"Pause",
+"title_win":						"You made it!",
+"title_lose":						"Oops",
+"title_sandbox":					"Level",
+"title_sandbox_exit":				"Level",
+"title_sandbox_save":				"save",
+"title_newitens":					"Congratulations",
+"title_newitens2":					"You found a bonus portal",
+"title_endgame":					"You Saved the Gooms",
+"title_update":						"New Version",
+			
+			
+			
+"info_newitens":					"You got new itens in the level editor",
+"info_endgame_sandbox":				"You got it",
+"info_endgame_sandbox2":			"itens for the level editor. Create your own level right now!",
+			
+"info_endgame_donate":				"Gostou do Gooms? Então nos ajude fazendo uma doação. (:",
+"info_endgame_like":				"Share gooms with your friends on Facebook !",
+"info_endgame_site":				"Visit Gooms website!",
+"info_endgame_facebook_page":		"Visit us on Facebook!",
+"info_endgame_menu":				"GO back to the main Menu",
+"info_sandbox_exit_share":			"Let's share your level on Facebook",
+"info_sandbox_exit_save":			"Do you want to permanently delete your level?",
+"info_update":						"A new version of gooms was downloaded to your computer. Do you want to play the new version now?",
+
+
+
+"l1_1":								"Oh Gosh! I can not move... :/",
+"l1_2":								"Maybe it's because of that shock that I hit me on the cave",
+"l1_3":								"I need to find a way to meet my friends and go home.",
+"l1_4":								"...",
+"l1_5":								"Look that! There is a portal down there. But how do I get to it! I'm paralyzed! : |",
+				
+"l2_1":								"Humm. I'm not home yet.",
+			
+"l3_1":								"Nice! Boxes with antigravity screws. I bet they never move. : D",
+			
+"l4_1":								"Oh My! There is a TNT by my side. If it explodes I can be thrown far away.",
+"l4_2":								"Oh, I am scared! :O",
+			
+"l5_1":								"This metal box looks pretty tough.",
+"l5_2":								"I bet it never breaks.",
+"l5_3":								"My father would make a beautiful refrigerator with one of these :v",
+			
+"l6_1":								"Hmm, now what?",
+			
+"l7_1":								"I have heard that YELLOW PORTALS are special.",
+"l7_2":								"It seems that reaching them you gain items to use in the Level Editor",
+					
+"l15_1":							"Hey, Green! Down here!!!",
+"l15_2":							"Yellow! I finally found someone!",
+"l15_3":							"Are you paralyzed too?",
+"l15_4":							"Yes, me too! But I'm managing to get to the portals,  it seems that something is helping me ...",
+"l15_5":							"Hehehe. The wooden boxes must be brittle and easy to break..",
+"l15_6":							"Uhmm, vai ver é isso. ~: .",
+			
+"l19_1":							"Come here. Birdie, birdie, birdie ...",
+			
+"l26_1":							"Look Yellow! It's that bird again ...",
+"l26_2":							"Have you noticed that when you have a bird like that there is always a yellow portal nearby?",
+"l26_3":							"Um ... I do not know ..",
+					
+"l31_1":							"Phew! Everyone's here!",
+"l31_2":							"Where are we going?",
+"l31_3":							"Maybe we're going to the Level Editor... ",
+"l31_4":							"Hope not. My father told me that the Level Editor is a lawless land.",
+			
+"l35_1":							"Hmm, that's whats the Blue bird said.",
+"l35_2":							"There must be some yellow portal here...",
+			
+"l60_1":							"Hey !, Do you see a portal?",
+"l60_2":							"I can't see anything, just a few clouds and this bridge.",
+"l60_3":							"Me neither.",
+"l60_4":							"I'm soo hungry.",
+					
+			
+"st_1":								"Hi! I'll introduce you to Gooms' Level Editor. Click the balloon to proceed. To exit the tutorial click on me or on the button below..",
+"st_2":								"Okay, come on! Look where the yellow arrow is pointing ...",
+"st_3":								" This bottom opens a menu with the Level Editor: PUBLISH AND DELETE.",
+"st_4":								"Up there you can select the object to use on the Level Editor. To do so you can use the arrows keys",
+"st_5":				 				"Try it, select one object and drag to the scene. There are over 50 types of itens for you to create your level.",
+"st_6":								"Initially you can use up to 10 itens per level, but you can get and unlock many others by finding the YELLOW PORTALS during the game",
+"st_7":								"In this other button you can PLAY your level and test how it is going.",
+"st_8":								"This bottom in the down in the left corner can change the time setting for the level.",
+"st_9":								"Here you can zoom in and out. You can also use the mouse wheel",
+"st_10":							"These two arrows can rotate the selected itens. You also can use '' Z '' and ''X'' to ROTATE  and ''C'' to CLEAR rotation. For a smoother rotation hold SHIFT.",
+"st_11":							"To select mutiples itens press SHIFT. You can also move the selected itens with the arrow keys.",
+"st_12":							"To clear selection double click the sky.",
+"st_13":							"Click the recicle bin icon to erase selected objects. You can also use the right bottom or the ''D'' key to delete an item.",
+"st_14":							"That's it my friend. Enjoy Gooms!",
+			
+			
+"sc1_1":							"Then he said:",
+"sc1_2":							"It wasn't me, it was the parrot!",
+"sc1_3":							"Guys, Guys!",
+"sc1_4":							"I just heard about a huuuuge cave near the Box Forrest",
+"sc1_5":							"Who is brave enought to come and see it?",
+"sc1_6":							"Let`s go!",
+			
+"sc2_1":							"COOOAAAASSSHHH!",
+			
+			
+"developer":						"Created By",
+"developer_name":					"Marcelo Kohl",
+			
+"character_design":					"Character Design",
+"character_design_name":			"Jonas Brandão",
+			
+"sound_design":						"Music & Sfx's",
+"sound_design_name":				"Pedro Ferraz",
+			
+"publisher":						"Publisher",
+"publisher_name":					"Plot Kids",
+
+"end_thanks"						:"Thank you for playing GOOMS (:",
+
+"the_end_of_lang":""
+
+}}

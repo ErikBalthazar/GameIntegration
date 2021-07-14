@@ -1,0 +1,165 @@
+﻿{"c2dictionary":true,"data":{
+
+"loading":				"Carregando",
+
+
+
+"btn_play":				"Jogar",
+"btn_sandbox":			"Editor de Fases",
+"btn_credits":			"Créditos",
+
+"info_levels":			"fases concluídas de",
+"info_itens":			"itens conquistados de",
+
+
+
+"btn_new":				"Criar Fase",
+"btn_random":			"Random",
+
+
+
+"level_game":			"Fase",
+"level_tutorial":		"tutorial",
+"level_sandbox":		"Fase",
+
+
+
+"btn_save":				"Publicar",
+"btn_delete":			"Descartar",
+"btn_exit":				"Sair",
+"btn_cancel":			"Cancelar",
+"btn_end_tutorial":		"Fechar tutorial",
+"btn_share":			"Compartilhar",
+
+"btn_preview":			"Jogar",
+"btn_restart": 			"Novo",
+"btn_view":				"Jogar",
+
+"btn_update":			"Atualizar",
+
+
+
+"scene_skip":			"Clique para pular a abertura",
+
+
+
+"title_credits":		"Créditos",
+"title_pause":			"Pausa",
+"title_win":			"Fase Completa",
+"title_lose":			"Oops",
+"title_sandbox":		"Fase",
+"title_sandbox_exit":	"Fase",
+"title_sandbox_save":	"salva",
+"title_newitens":		"Parabéns",
+"title_newitens2":		"Portal Bônus encontrado",
+"title_endgame":		"Você terminou o Gooms",
+"title_update":			"Nova versão",
+
+
+
+"info_newitens":				"Você ganhou novos itens para usar no Editor de Fases! (:",
+"info_endgame_sandbox":			"Você conquistou",
+"info_endgame_sandbox2":		"itens para usar no Editor de Fases. Crie sua fase agora mesmo!",
+"info_endgame_donate":			"Gostou do Gooms? Então nos ajude fazendo uma doação. (:",
+"info_endgame_like":			"Compartilhe o Gooms com seus amigos do Facebook!",
+"info_endgame_site":			"Acesse o site do Gooms",
+"info_endgame_facebook_page":	"Curta a página do Gooms no Facebook!",
+"info_endgame_menu":			"Voltar para o menu Principal",
+"info_sandbox_exit_share":		"Deseja compartilhar sua fase no Facebook?",
+"info_sandbox_exit_save":		"Deseja excluir permanentemente sua fase?",
+"info_update":					"Uma nova versão do Gooms foi baixada para o seu computador. Deseja jogar a nova versão agora?",
+
+
+
+"l1_1":					"Caramba! Não consigo me mover... :/",
+"l1_2":					"Talvez seja por conta daquele choque que levei lá na caverna.",
+"l1_3":					"Eu preciso arrumar uma forma de encontrar meus amigos e voltar pra casa.",
+"l1_4":					"...",
+"l1_5":					"Olha só! Tem um portal ali embaixo. Mas como vou chegar até ele se eu tô paralisado? : |",
+
+"l2_1":					"Humm. Ainda não cheguei em casa.",
+
+"l3_1":					"Legal! Caixas com parafusos anti-gravitacionais. Aposto que elas nunca se movem. :D ",
+
+"l4_1":					"Nossa, tem uma tnt aqui do meu lado. Se ela explodir eu posso ser jogada longe.",
+"l4_2":					"Ai meu coração! :o",
+
+"l5_1":					"Essa caixa de metal parece bem resistente.",
+"l5_2":					"Aposto que ela nunca quebra.",
+"l5_3":					"Meu pai faria uma bela geladeira com uma dessas. :v",
+
+"l6_1":					"Humm, e agora?",
+
+"l7_1":					"Ouvi dizer que os PORTAIS AMARELOS são especiais.",
+"l7_2":					"Parece que chegando neles você conquista itens para usar no Editor de Fases.",
+
+"l15_1":				"Ei, Verde! Aqui em baixo!!!",
+"l15_2":				"Amarelinho! Finalmente achei alguém!",
+"l15_3":				"Você tá paralisado também?",
+"l15_4":				"Sim, também! Mas tô conseguindo chegar nos portais, até parece que tem alguma coisa me ajudando...",
+"l15_5":				"Hehehe. Devem ser só as caixas de madeira que são fracas e quebram fácil.",
+"l15_6":				"Uhmm, vai ver é isso. ~: .",
+
+"l19_1":				"Vem cá. Passarinho, passarinho, passarinho...",
+
+"l26_1":				"Olha Amarelinho! É aquele passarinho outra vez...",
+"l26_2":				"Já reparou que quando tem um passarinho desses tem também um portal amarelo?",
+"l26_3":				"Humm... Sei não ein.",
+
+"l31_1":				"Ufa! Tá todo mundo aqui!",
+"l31_2":				"Pra onde será que a gente tá indo?",
+"l31_3":				"Talvez a gente tá indo pro Editor de Fases...",
+"l31_4":				"Espero que não. Meu pai me disse que o Editor de Fases é uma terra sem lei.",
+
+"l35_1":				"Humm, aquele é o pássaro que o azulzinho falou.",
+"l35_2":				"Deve ter algum portal amarelo por aqui...",
+
+"l60_1":				"Ei!, Vocês conseguem ver algum portal daqui?",
+"l60_2":				"Não consigo ver nada, só umas nuvens e essa ponte.",
+"l60_3":				"Nem eu.",
+"l60_4":				"Eu tô com fome.",
+
+
+"st_1":					"Oi! Eu vou lhe apresentar o Editor de Fases do Gooms. Clique no balão para continuar. Pra sair do tutorial clique em mim ou no botão abaixo.",
+"st_2":					"Muito bem, vamos lá! Observe para onde a seta amarela está apontando...",
+"st_3":					"Esse botão ali abre um menu com as opções do Editor de Fases: PUBLICAR e DESCARTAR.",
+"st_4":					"Ali em cima você seleciona um objeto para usar no Editor de Fases. Pra isso use as setas ao lado ou a rodinha do mouse.",
+"st_5":					"Tente, selecione um objeto e arraste para baixo. Existem mais de 50 tipos diferentes de objetos pra criar sua fase.",
+"st_6":					"Inicialmente você pode usar até 10 itens por fase. Mas você pode ganhar muitos outros itens encontrando os PORTAIS AMARELOS durante o jogo.",
+"st_7":					"Nesse outro botão você pode JOGAR sua fase e testar como ela está ficando.",
+"st_8":					"Esse botão ali em baixo serve para mudar o horário do cenário.",
+"st_9":					"Nesse dois outros botões você pode aproximar ou afastar a tela. Ou use a rodinha do mouse.",
+"st_10":				"Nessas duas setas você rotaciona os objetos selecionados. No teclado você pode usar as teclas ''Z'', ''X'' para rotacionar e ''C'' pra limpar a rotação. E ainda segurar SHIFT para uma rotação mais suave.",
+"st_11":				"Para selecionar mais de um objeto segure SHIFT. Você também pode movimentar os objetos selecionados com as setas do teclado.",
+"st_12":				"Para tirar a seleção dê duplo clique sobre o céu.",
+"st_13":				"E clicando no ícone de lixeira você apaga os objetos selecionados. Você pode usar também o botão direito do mouse ou ainda a tecla ''D'' para apagar um objeto.",
+"st_14":				"É isso, amigo. Aproveite o Gooms!",
+
+
+"sc1_1":				"E ai ele disse:",
+"sc1_2":				"Não foi eu, foi o papagaio!",
+"sc1_3":				"Galera, galera!",
+"sc1_4":				"Acabei de saber que tem uma caverna beeem grande lá perto da Floresta das Caixas.",
+"sc1_5":				"Quem tem coragem de ir lá ver?",
+"sc1_6":				"Demoro!",
+
+"sc2_1":				"COOOAAAASSSHHH!",
+
+
+"developer":			"Criado por",
+"developer_name":		"Marcelo Kohl",
+
+"character_design":		"Character Design",
+"character_design_name":"Jonas Brandão",
+
+"sound_design":			"Music & Sfx's",
+"sound_design_name":	"Pedro Ferraz",
+
+"publisher":			"Publisher",
+"publisher_name":		"Plot Kids",
+
+"end_thanks"			:"Obrigado por jogar o GOOMS (:",
+
+"the_end_of_lang":""
+
+}}
