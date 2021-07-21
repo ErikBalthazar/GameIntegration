@@ -12,7 +12,8 @@ class WebViewActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_web_view)
 
-        val gamePath = intent.getStringExtra("game")
+        val gamePath = intent.getStringExtra("gamePath")
+        val gameFileExtension = intent.getStringExtra("gameFileExtension")
 
         val webView = findViewById<WebView>(R.id.webview)
         WebView.setWebContentsDebuggingEnabled(true)
@@ -29,6 +30,6 @@ class WebViewActivity : AppCompatActivity() {
         webSettings.domStorageEnabled = true
         webView.webChromeClient = WebChromeClient()
 
-        webView.loadUrl("https://appassets.androidplatform.net/assets/$gamePath/index.html")
+        webView.loadUrl("https://appassets.androidplatform.net/assets/$gamePath/index.$gameFileExtension")
     }
 }

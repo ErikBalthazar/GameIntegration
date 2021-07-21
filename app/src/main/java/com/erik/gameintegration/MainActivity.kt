@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity(), GameAdapter.GameViewHolder.Callback.Cl
         gameList.add(Game("Num Pop", "num_pop"))
         gameList.add(Game("Simon Says", "simon"))
         gameList.add(Game("Gooms", "gooms"))
+        gameList.add(Game("Combinado", "combined", "php"))
 
         val recyclerView = findViewById<RecyclerView>(R.id.recycler_view)
         recyclerView.apply {
@@ -32,11 +33,14 @@ class MainActivity : AppCompatActivity(), GameAdapter.GameViewHolder.Callback.Cl
         }
     }
 
-    override fun onItemClick(gamePath: String?) {
+    override fun onItemClick(gamePath: String?, gameFileExtension: String?) {
+        val intent = Intent(this, WebViewActivity::class.java)
         gamePath?.let {
-            val intent = Intent(this, WebViewActivity::class.java)
-            intent.putExtra("game", it)
-            startActivity(intent)
+            intent.putExtra("gamePath", it)
         }
+        gameFileExtension?.let {
+            intent.putExtra("gameFileExtension", it)
+        }
+        startActivity(intent)
     }
 }

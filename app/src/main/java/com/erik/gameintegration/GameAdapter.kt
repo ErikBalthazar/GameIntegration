@@ -32,21 +32,23 @@ class GameAdapter(
     ): RecyclerView.ViewHolder(itemView), View.OnClickListener{
 
         private var gamePath: String? = null
+        private var gameFileExtension: String? = null
 
         fun bindView(game: Game) {
             val gameNameText = itemView.findViewById<TextView>(R.id.game_name_text)
             gameNameText.text = game.name
             gamePath = game.path
+            gameFileExtension = game.fileExtension
             itemView.setOnClickListener(this)
         }
 
         override fun onClick(v: View?) {
-            onItemClickedListener?.onItemClick(gamePath)
+            onItemClickedListener?.onItemClick(gamePath, gameFileExtension)
         }
 
         interface Callback {
             interface Click {
-                fun onItemClick(gamePath: String?)
+                fun onItemClick(gamePath: String?, gameFileExtension: String?)
             }
         }
     }
