@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity(), GameAdapter.GameViewHolder.Callback.Cl
         gameList.add(EmbedGame("Gooms", "gooms"))
         gameList.add(EmbedGame("Combinado", "combined", "php"))
         gameList.add(WebGame("Num_pop firebase", "https://kids-7028b.web.app/num_pop"))
+        gameList.add(WebGame("Galaxies: Combat", "https://playcanv.as/p/Ikq6Uk6A/"))
 
         val recyclerView = findViewById<RecyclerView>(R.id.recycler_view)
         recyclerView.apply {
