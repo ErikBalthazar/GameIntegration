@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.webkit.WebChromeClient
 import android.webkit.WebView
+import android.webkit.WebViewClient
 import androidx.webkit.WebViewAssetLoader
 import com.erik.gameintegration.entity.EmbedGame
 import com.erik.gameintegration.entity.Game
@@ -12,11 +13,13 @@ import com.erik.gameintegration.entity.WebGame
 class WebViewActivity : AppCompatActivity() {
 
     private var webView: WebView? = null
+    private var game: Game? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_web_view)
         webView = findViewById(R.id.webview)
+        game = intent.getParcelableExtra<Game>(GAME_EXTRA)
         applyWebViewSetting()
         loadWebView(getGameUrl())
     }
@@ -28,7 +31,12 @@ class WebViewActivity : AppCompatActivity() {
             val assetLoader = WebViewAssetLoader.Builder()
                 .addPathHandler("/assets/", WebViewAssetLoader.AssetsPathHandler(this))
                 .build()
-            it.webViewClient = LocalContentWebViewClient(assetLoader)
+
+            if (game is EmbedGame) {
+                it.webViewClient = LocalContentWebViewClient(assetLoader)
+            } else if (game is WebGame) {
+                it.webViewClient = WebViewClient()
+            }
 
             val webSettings = it.settings
             webSettings.allowFileAccess = false
@@ -44,11 +52,12 @@ class WebViewActivity : AppCompatActivity() {
     }
 
     private fun getGameUrl(): String {
-        val game = intent.getParcelableExtra<Game>(GAME_EXTRA)
-        if (game is EmbedGame) {
-            return getEmbedGameUrl(game.path, game.fileExtension)
-        } else if (game is WebGame) {
-            return game.url
+        game?.let {
+            if (it is EmbedGame) {
+                return getEmbedGameUrl(it.path, it.fileExtension)
+            } else if (it is WebGame) {
+                return it.url
+            }
         }
         return ""
     }
