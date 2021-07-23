@@ -3,10 +3,12 @@ package com.erik.gameintegration
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.webkit.WebView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import androidx.webkit.WebViewAssetLoader
+import com.erik.gameintegration.WebViewActivity.Companion.GAME_EXTRA
+import com.erik.gameintegration.entity.EmbedGame
+import com.erik.gameintegration.entity.Game
+import com.erik.gameintegration.entity.WebGame
 
 class MainActivity : AppCompatActivity(), GameAdapter.GameViewHolder.Callback.Click  {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,12 +16,13 @@ class MainActivity : AppCompatActivity(), GameAdapter.GameViewHolder.Callback.Cl
         setContentView(R.layout.activity_main)
 
         val gameList = ArrayList<Game>()
-        gameList.add(Game("Multitouch", "multitouch"))
-        gameList.add(Game("Save Humans", "save_humans"))
-        gameList.add(Game("Num Pop", "num_pop"))
-        gameList.add(Game("Simon Says", "simon"))
-        gameList.add(Game("Gooms", "gooms"))
-        gameList.add(Game("Combinado", "combined", "php"))
+        gameList.add(EmbedGame("Multitouch", "multitouch"))
+        gameList.add(EmbedGame("Save Humans", "save_humans"))
+        gameList.add(EmbedGame("Num Pop", "num_pop"))
+        gameList.add(EmbedGame("Simon Says", "simon"))
+        gameList.add(EmbedGame("Gooms", "gooms"))
+        gameList.add(EmbedGame("Combinado", "combined", "php"))
+        gameList.add(WebGame("Galaxies: Combat", "https://playcanv.as/p/Ikq6Uk6A/"))
 
         val recyclerView = findViewById<RecyclerView>(R.id.recycler_view)
         recyclerView.apply {
@@ -33,13 +36,10 @@ class MainActivity : AppCompatActivity(), GameAdapter.GameViewHolder.Callback.Cl
         }
     }
 
-    override fun onItemClick(gamePath: String?, gameFileExtension: String?) {
+    override fun onItemClick(game: Game?) {
         val intent = Intent(this, WebViewActivity::class.java)
-        gamePath?.let {
-            intent.putExtra("gamePath", it)
-        }
-        gameFileExtension?.let {
-            intent.putExtra("gameFileExtension", it)
+        game?.let {
+            intent.putExtra(GAME_EXTRA, it)
         }
         startActivity(intent)
     }

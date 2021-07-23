@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.erik.gameintegration.entity.Game
 
 class GameAdapter(
     private val context: Context,
@@ -31,24 +32,22 @@ class GameAdapter(
         private val onItemClickedListener: Callback.Click?
     ): RecyclerView.ViewHolder(itemView), View.OnClickListener{
 
-        private var gamePath: String? = null
-        private var gameFileExtension: String? = null
+        private var game: Game? = null
 
         fun bindView(game: Game) {
             val gameNameText = itemView.findViewById<TextView>(R.id.game_name_text)
             gameNameText.text = game.name
-            gamePath = game.path
-            gameFileExtension = game.fileExtension
+            this.game = game
             itemView.setOnClickListener(this)
         }
 
         override fun onClick(v: View?) {
-            onItemClickedListener?.onItemClick(gamePath, gameFileExtension)
+            onItemClickedListener?.onItemClick(game)
         }
 
         interface Callback {
             interface Click {
-                fun onItemClick(gamePath: String?, gameFileExtension: String?)
+                fun onItemClick(game: Game?)
             }
         }
     }
