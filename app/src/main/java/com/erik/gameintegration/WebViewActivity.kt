@@ -63,12 +63,12 @@ class WebViewActivity : AppCompatActivity() {
     }
 
     private fun getEmbedGameUrl(path: String, fileExtension: String): String {
-        return "https://appassets.androidplatform.net/assets/$path/index.$fileExtension"
+        return "$ASSETS_PATH/$path/$ASSETS_GAME_INDEX.$fileExtension"
     }
 
     companion object {
         const val GAME_EXTRA = "game"
-        const val ASSETS_PATH = "https://appassets.androidplatform.net/assets/"
-        const val ASSETS_GAME_INDEX = "/index."
+        const val ASSETS_PATH = "https://appassets.androidplatform.net/assets"
+        const val ASSETS_GAME_INDEX = "index"
     }
 }

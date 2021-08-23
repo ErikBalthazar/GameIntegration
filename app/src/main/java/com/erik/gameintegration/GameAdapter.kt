@@ -1,11 +1,13 @@
 package com.erik.gameintegration
 
 import android.content.Context
+import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.erik.gameintegration.entity.EmbedGame
 import com.erik.gameintegration.entity.Game
 
 class GameAdapter(
@@ -38,11 +40,19 @@ class GameAdapter(
             val gameNameText = itemView.findViewById<TextView>(R.id.game_name_text)
             gameNameText.text = game.name
             this.game = game
+            itemView.setBackgroundColor(getGameBackgroundColor(game))
             itemView.setOnClickListener(this)
         }
 
         override fun onClick(v: View?) {
             onItemClickedListener?.onItemClick(game)
+        }
+
+        private fun getGameBackgroundColor(game: Game?): Int {
+            return when (game) {
+                is EmbedGame -> Color.rgb(41,116,45)
+                else -> Color.rgb(54,90,167)
+            }
         }
 
         interface Callback {
