@@ -66,6 +66,21 @@ class WebViewActivity : AppCompatActivity() {
         return "$ASSETS_PATH/$path/$ASSETS_GAME_INDEX.$fileExtension"
     }
 
+    override fun onPause() {
+        super.onPause()
+        webView?.onPause()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        webView?.onResume()
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        webView?.destroy()
+    }
+
     companion object {
         const val GAME_EXTRA = "game"
         const val ASSETS_PATH = "https://appassets.androidplatform.net/assets"
