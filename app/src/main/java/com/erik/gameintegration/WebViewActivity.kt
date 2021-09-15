@@ -43,6 +43,7 @@ class WebViewActivity : AppCompatActivity() {
             webSettings.allowContentAccess = false
             webSettings.javaScriptEnabled = true
             webSettings.domStorageEnabled = true
+            it.addJavascriptInterface(JSBridge(), "JSBridge")
             it.webChromeClient = WebChromeClient()
         }
     }
